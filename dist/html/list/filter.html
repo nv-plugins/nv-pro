@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta  name="keywords" content="Pro,PRO" />
+    <meta name="description" content="Zr PRO by Zr design" />
+    <title>Nv PRO</title>
+    <link type="text/css" rel="stylesheet" data-theme href="//storage.360buyimg.com/v2.0.0/nv.min.css" />
+    <link type="text/css" rel="stylesheet" href="/dist/css/dark.min.css" />
+</head>
+
+<body>
+
+<!--style开发模式-->
+<div id="base">
+    <div class="auto-size">
+        <div class="nv-layout nv-layout-has-side nv-layout-side-trigger nv-layout-theme-dark">
+            <div class="nv-layout-side">
+                <div class="nv-layout-side-children nv-nav-geekblue">
+    <div class="nv-layout-logo">LOGO</div>
+    <div class="nv-layout-icon-home">
+        <i class="nvicon-home-empty"></i>
+    </div>
+    <ul class="nv-nav nv-nav-shrink nv-nav-tree" trigger="double" nv-event="click">
+        <!--二级导航效果一-->
+        <li class="nv-nav-item nv-nav-show">
+            <div class="nv-nav-subtitle">
+                <i class="nvicon-classify-empty"></i><span class="nv-nav-subset-title">dashboard</span>
+                <i class="nvicon-arrow-down"></i>
+            </div>
+            <!--一级菜单-->
+            <ul class="nv-nav-menu nv-nav-show">
+                <li class="nv-nav-item nv-nav-selected">
+                    <!--可以使用 <a> 标签-->
+                    <a href="/dist/html/dashboard/workboard.html" class="nv-nav-subtitle">工作台</a>
+                </li>
+                <li class="nv-nav-item">
+                    <div class="nv-nav-subtitle">
+                        <span class="nv-nav-subset-title">可视化方式</span><i class="nvicon-arrow-down"></i></div>
+                    <!--子集菜单-->
+                    <ul class="nv-nav-leaves">
+                        <li class="nv-nav-item">
+                            <a class="nv-nav-subtitle" href="/dist/html/dashboard/view/one.html">传统布局</a>
+                        </li>
+                        <li class="nv-nav-item">
+                            <a class="nv-nav-subtitle" href="/dist/html/dashboard/view/two.html">信息布局</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <!--二级导航效果一-->
+        <li class="nv-nav-item">
+            <div class="nv-nav-subtitle">
+                <i class="nvicon-menu-empty"></i><span class="nv-nav-subset-title">表单</span>
+                <i class="nvicon-arrow-down"></i>
+            </div>
+            <!--一级菜单-->
+            <ul class="nv-nav-menu">
+                <li class="nv-nav-item">
+                    <a href="/dist/html/form/base.html" class="nv-nav-subtitle">基础类型</a>
+                </li>
+            </ul>
+        </li>
+        <!--二级导航效果一-->
+        <li class="nv-nav-item">
+            <div class="nv-nav-subtitle">
+                <i class="nvicon-doc-empty"></i><span class="nv-nav-subset-title">列表</span>
+                <i class="nvicon-arrow-down"></i>
+            </div>
+            <!--一级菜单-->
+            <ul class="nv-nav-menu">
+                <li class="nv-nav-item">
+                    <a href="/dist/html/list/filter.html" class="nv-nav-subtitle">列表筛选方式</a>
+                </li>
+            </ul>
+        </li>
+        <!--二级导航效果一-->
+        <li class="nv-nav-item">
+            <div class="nv-nav-subtitle">
+                <i class="nvicon-minus-empty"></i><span class="nv-nav-subset-title">详情页</span>
+                <i class="nvicon-arrow-down"></i>
+            </div>
+            <!--一级菜单-->
+            <ul class="nv-nav-menu">
+                <li class="nv-nav-item">
+                    <a href="/dist/html/detail/normal.html" class="nv-nav-subtitle">基础详情页</a>
+                </li>
+            </ul>
+        </li>
+        <!--二级导航效果一-->
+        <li class="nv-nav-item">
+            <div class="nv-nav-subtitle">
+                <i class="nvicon-filter-empty"></i><span class="nv-nav-subset-title">结果展示页</span>
+                <i class="nvicon-arrow-down"></i>
+            </div>
+            <!--一级菜单-->
+            <ul class="nv-nav-menu">
+                <li class="nv-nav-item">
+                    <a href="/dist/html/result/success.html" class="nv-nav-subtitle">成功</a>
+                </li>
+                <li class="nv-nav-item">
+                    <a href="/dist/html/result/fail.html" class="nv-nav-subtitle">失败</a>
+                </li>
+            </ul>
+        </li>
+        <li class="nv-nav-item">
+            <div class="nv-nav-subtitle">
+                <i class="nvicon-info-empty"></i><span class="nv-nav-subset-title">异常展示</span>
+                <i class="nvicon-arrow-down"></i>
+            </div>
+            <!--一级菜单-->
+            <ul class="nv-nav-menu">
+                <li class="nv-nav-item">
+                    <a href="/dist/html/error/403.html" class="nv-nav-subtitle">403</a>
+                </li>
+                <li class="nv-nav-item">
+                    <a href="/dist/html/error/404.html" class="nv-nav-subtitle">404</a>
+                </li>
+                <li class="nv-nav-item">
+                    <a href="/dist/html/error/500.html" class="nv-nav-subtitle">500</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+
+
+            </div>
+            <div class="nv-layout">
+                <div class="nv-layout-header">
+                    <div class="nv-row-flex">
+    <div class="nv-col-2 nv-layout-trigger" id="double"><i class="nvicon-menu-empty"></i></div>
+    <div class="nv-col-16">
+        <ul class="nv-nav nv-nav-horizontal">
+            <!--当前选中状态 添加nv-nav-selected-->
+            <li class="nv-nav-item nv-nav-selected">系统管理</li>
+            <!--默认状态-->
+            <li class="nv-nav-item">系统规划</li>
+            <!--有下拉菜单状态-->
+            <li class="nv-nav-item">
+                物流规划 <i class="nvicon-arrow-down"></i>
+                <!--一级菜单-->
+                <ul class="nv-nav-menu">
+                    <li class="nv-nav-item">目标规划</li>
+                    <li class="nv-nav-item">
+                        赋能规划<i class="nvicon-arrow-right"></i>
+                        <!--子集菜单-->
+                        <ul class="nv-nav-leaves">
+                            <li class="nv-nav-item">对外</li>
+                            <li class="nv-nav-item">商家</li>
+                            <li class="nv-nav-item">客服</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="nv-col-6">
+        <div class="user-info">
+            <div class="nv-dropdown nv-dropdown-right">
+                <div class="user-photo">
+                    <img src="//storage.jd.com/nvstatic/images/demo2.jpg" />
+                </div>
+                <!--标题名称-->
+                <a class="nv-dropdown-normal" href="javascript:void(0);">Dropdown<i class="nvicon-arrow-down"></i></a>
+                <!--下拉菜单-->
+                <ul class="nv-dropdown-menu user-fix-top">
+                    <li class="nv-dropdown-item">
+                        <a target="_blank" href="#">Item 1</a>
+                    </li>
+                    <li class="nv-dropdown-item">
+                        <a target="_blank" href="#">Item 2</a>
+                    </li>
+                    <li class="nv-dropdown-item nv-dropdown-disable">
+                        Item 3（disable）
+                    </li>
+                    <li class="nv-dropdown-divider"></li>
+                    <li class="nv-dropdown-item">
+                        <a target="_blank" href="#">Item 4（normal）</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="nv-layout-content">
+                    <div class="nv-breadcrumb pro-breadcrumb">
+                        <em class="nv-breadcrumb-normal"><i class="nvicon-home-empty"></i></em>
+                        <i class="nvicon-arrow-right nv-breadcrumb-icon"></i>
+                        <em class="nv-breadcrumb-normal">
+                            <a href="" class="nv-breadcrumb-link">列表页</a>
+                        </em>
+                        <i class="nvicon-arrow-right nv-breadcrumb-icon"></i>
+                        <em class="nv-breadcrumb-normal">
+                            列表筛选方式一
+                        </em>
+                    </div>
+                    <div id="content" style="min-height: calc(100vh - 106px);background: #fff;padding: 24px 0; margin: 0 24px;">
+                        <!--内容区域-->
+                        <form class="nv-form">
+                            <div class="nv-row-flex">
+                                <div class="nv-col-lg-6 nv-col-sm-12 nv-col-xs-24">
+                                    <label class="nv-form-item">
+                                        <span class="nv-form-label">
+                                            主营参数：
+                                        </span>
+                                        <span class="nv-form-area">
+                                            <input type="text" placeholder="请输入参数" class="nv-input nv-input-clear">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="nv-col-lg-6 nv-col-sm-12 nv-col-xs-24">
+                                    <div class="nv-form-item">
+                                        <span class="nv-form-label">
+                                            地区选择：
+                                        </span>
+                                        <span class="nv-form-area">
+                                             <select name="country" class="nv-select">
+                                                <option value="">请选择一个城市</option>
+                                                <option value="010">北京</option>
+                                                <option value="021">上海</option>
+                                                <option value="0571">杭州</option>
+                                             </select>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="nv-col-lg-6 nv-col-sm-12 nv-col-xs-24">
+                                    <label class="nv-form-item">
+                                        <span class="nv-form-label">
+                                            主营收入：
+                                        </span>
+                                        <span class="nv-form-area">
+                                            <input type="text" placeholder="输入营业收入" class="nv-input nv-input-clear">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="nv-col-lg-6 nv-col-sm-12 nv-col-xs-24">
+                                    <label class="nv-form-item">
+                                        <span class="nv-form-label">
+                                            单位收入：
+                                        </span>
+                                        <span class="nv-form-area">
+                                            <input type="text" placeholder="输入单价收入" class="nv-input nv-input-clear">
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="nv-row-flex">
+                                <div class="nv-col-lg-6 nv-col-sm-12 nv-col-xs-24">
+                                    <label class="nv-form-item">
+                                        <span class="nv-form-label">
+                                            附属参数：
+                                        </span>
+                                        <span class="nv-form-area">
+                                            <input type="text" placeholder="请输入附属参数" class="nv-input nv-input-clear">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="nv-col-lg-6 nv-col-sm-12 nv-col-xs-24">
+                                    <div class="nv-form-item">
+                                        <span class="nv-form-label">
+                                            附属区域：
+                                        </span>
+                                        <span class="nv-form-area">
+                                             <select name="country" class="nv-select">
+                                                <option value="">请选择一个城市</option>
+                                                <option value="010">北京</option>
+                                                <option value="021">上海</option>
+                                                <option value="0571">杭州</option>
+                                             </select>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="nv-col-lg-6 nv-col-sm-12 nv-col-xs-24">
+                                    <label class="nv-form-item">
+                                        <span class="nv-form-label">
+                                            附属收入：
+                                        </span>
+                                        <span class="nv-form-area">
+                                            <input type="text" placeholder="输入附属营业收入" class="nv-input nv-input-clear">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="nv-col-lg-6 nv-col-sm-12 nv-col-xs-24">
+                                    <label class="nv-form-item">
+                                        <span class="nv-form-label">
+                                            附属单价：
+                                        </span>
+                                        <span class="nv-form-area">
+                                            <input type="text" placeholder="输入附属单价收入" class="nv-input nv-input-clear">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="nv-col-lg-6 nv-col-sm-12 nv-col-xs-24">
+                                    <label class="nv-form-item">
+                                        <span class="nv-form-label">
+                                            统计参数：
+                                        </span>
+                                        <span class="nv-form-area">
+                                            <input type="text" placeholder="输入统计参数" class="nv-input nv-input-clear">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="nv-col-lg-6 nv-col-sm-12 nv-col-xs-24">
+                                    <label class="nv-form-item">
+                                        <span class="nv-form-label">
+                                            统计单价：
+                                        </span>
+                                        <span class="nv-form-area">
+                                            <input type="text" placeholder="输入统计单价" class="nv-input nv-input-clear">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="nv-col-lg-6 nv-col-sm-12 nv-col-xs-24">
+                                    <label class="nv-form-item">
+                                        <span class="nv-form-label">
+                                            统计类型：
+                                        </span>
+                                        <span class="nv-form-area">
+                                            <input type="text" placeholder="输入统计类型" class="nv-input nv-input-clear">
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="nv-col-lg-6 nv-col-sm-12 nv-col-xs-24">
+                                    <label class="nv-form-item">
+                                        <span class="nv-form-label">
+                                            统计质量：
+                                        </span>
+                                        <span class="nv-form-area">
+                                            <input type="text" placeholder="输入统计质量" class="nv-input nv-input-clear">
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="nv-row-flex">
+                                <div class="nv-col-24 nv-form-btn-group">
+                                    <input type="submit" class="nv-btn nv-btn-primary" value="查询" />
+                                    <input type="button" class="nv-btn nv-btn-primary" id="newModal" value="新建" />
+                                    <input type="button" class="nv-btn nv-btn-default" id="newImport" value="导入" />
+                                    <input type="button" class="nv-btn nv-btn-default" id="newExport" value="导出" />
+                                    <input type="button" class="nv-btn nv-btn-default" id="newDelete" value="删除" />
+                                    <input type="button" class="nv-btn nv-btn-primary" id="reload" value="reload" />
+                                </div>
+                            </div>
+                        </form>
+                        <div id="model_box"></div>
+                        <!-- table 输出位置 -->
+                        <div id="showTable"></div>
+
+
+                        <!--内容区域-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--新建内容模态框-->
+<div class="nv-modal fade nv-modal-prompt nv-modal-lg">
+    <div class="nv-modal-dialog">
+        <div class="nv-modal-content">
+            <div class="nv-modal-header">
+                <p class="nv-modal-title">
+                    <span>新建内容</span>
+                    <i class="nvicon-close nv-modal-close"></i>
+                </p>
+            </div>
+            <div class="nv-modal-body">
+                <form class="nv-form">
+                    <div class="nv-row-flex">
+                        <div class="nv-col-lg-12 nv-col-sm-24 nv-col-xs-24">
+                            <label class="nv-form-item">
+                                <span class="nv-form-label">
+                                    主营参数：
+                                </span>
+                                <span class="nv-form-area">
+                                   <div class="nv-input-group"><input type="text" placeholder="请输入参数" class="nv-input nv-input-clear"><i class="nvicon-close-circle"></i></div>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="nv-col-lg-12 nv-col-sm-24 nv-col-xs-24">
+                            <div class="nv-form-item">
+                                <span class="nv-form-label">
+                                    地区选择：
+                                </span>
+                                <span class="nv-form-area">
+                                   <select name="country" class="nv-select nv-select-hide">
+                                        <option value="">请选择一个城市</option>
+                                        <option value="010">北京</option>
+                                        <option value="021">上海</option>
+                                        <option value="0571">杭州</option>
+                                   </select>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="nv-col-lg-12 nv-col-sm-24 nv-col-xs-24">
+                            <label class="nv-form-item">
+                                <span class="nv-form-label">
+                                单个价格：
+                                </span>
+                                <span class="nv-form-area">
+                                   <input type="text" placeholder="请输入价格" class="nv-input nv-input-clear">
+                                </span>
+                            </label>
+                        </div>
+                        <div class="nv-col-lg-12 nv-col-sm-24 nv-col-xs-24">
+                            <label class="nv-form-item">
+                                <span class="nv-form-label">
+                                信息数量：
+                                </span>
+                                <span class="nv-form-area">
+                                   <input type="text" placeholder="请输入数量" class="nv-input nv-input-clear">
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="nv-modal-footer">
+                <input type="button"  class="nv-btn nv-btn-default nv-modal-btn nv-modal-cancel" value="取消"/>
+                <input type="button"  class="nv-btn nv-btn-primary nv-modal-btn nv-modal-enter" value="保存"/>
+            </div>
+        </div>
+    </div>
+</div>
+<!--导入模态框-->
+<div class="nv-modal fade nv-modal-import">
+    <div class="nv-modal-dialog">
+        <div class="nv-modal-content">
+            <div class="nv-modal-header">
+                <p class="nv-modal-title">
+                    <span>导入信息</span>
+                    <i class="nvicon-close nv-modal-close"></i>
+                </p>
+            </div>
+            <div class="nv-modal-body">
+                <input type="file" accept="" class="nv-upload nv-upload-manual">
+                <ul class="nv-upload-list">
+                    <li>
+                        <i class="nvicon-accessory-empty"></i><span>Accessory1.png</span><i class="delete nvicon-close"></i>
+                    </li>
+                </ul>
+                <div class="nv-upload-btn">
+                    <button class="nv-btn nv-btn-primary nv-btn-disable">Upload</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--大尺寸弹窗-->
+<!--html代码-->
+<!-- <div class="nv-modal nv-modal-lg nv-modal-size-lg" id="model-lg">
+    <div class="nv-modal-dialog">
+        <div class="nv-modal-content">
+            <div class="nv-modal-header">
+                <p class="nv-modal-title">
+                    <span>Title</span>
+                    <i class="nvicon-close nv-modal-close"></i>
+                </p>
+            </div>
+            <div class="nv-modal-body">
+                Here is the content  Here is the content Here is the content  Here is the content
+            </div>
+            <div class="nv-modal-footer">
+                <button class="nv-btn nv-btn-default nv-modal-btn nv-modal-cancel">Cancle</button>
+                <button class="nv-btn nv-btn-primary nv-modal-btn nv-modal-enter">Ok</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<script type="text/javascript" language="javascript" src="//storage.360buyimg.com/v2.0.0/nv.min.js"></script>
+<script type="text/javascript">
+    //配置方法
+    Nv.config({
+        //配置plugin_modules的目录；
+        baseUrl:"/dist/",
+        //开发模式，默认关闭；
+        development:true
+    })
+    //初始入口，Nv各个模块准备就绪后调用；
+    Nv.ready(function(){
+        Nv.use("jquery","./js/nv.table",'./js/nv.modal', "./js/pro","./js/list/list_filter",function(nv,$,table,modal) {
+
+            // var modal=modal.init("#model-lg",{
+            //     top:"",
+            //     openCallback:function(ev){
+            //         console.log('openCallback:', ev)
+            //     },
+            //     closeCallback:function(ev){
+            //         console.log('closeCallback:', ev)
+            //     }
+            // })
+
+            console.log(table)
+            // 初始化table
+            table.init({
+                id:'#showTable',
+                params: {},
+                fields: [
+                    {key: "number", name: "编号"},
+                    {key: "phone", name: "电话"},
+                    {key: "name", name: "姓名"},
+                    {key: "time", name: "时间"},
+                    {key: "type", name: "类型"},
+                    {key: "appId", name: "设备id"},
+                    {key: "address", name: "地址"},
+                    {key: "email", name: "邮箱"},
+                    {key: "discr", name: "描述"},
+                    {key: "other", name: "其他", filters: function (item, index) {
+                        return index + '000'
+                    }},
+                ],
+                operation: [
+                    {name: '编辑', eventName: 'edit'},
+                    {name: '删除', eventName: 'delete'},
+                ],
+            })
+            // 初始化弹层
+            modal.init([
+                {src: './mod2', width: '1000px', title: 'mod2信息'},
+                {src: './mod3'},
+            ])
+            // nv.table.reload('1')
+            table.onOperation = function (ev) {
+                console.log('nv table ', ev)
+                // nv.modal.mod2.params = {
+                //     aaa: '111',
+                //     bbb: '222',
+                // }
+                params = {
+                    aaa: '111222',
+                    bbb: '222333',
+                }
+                ev.eventName === 'edit' && modal.mod2.block(params)
+                ev.eventName === 'delete' && modal.mod3.show()
+            }
+            
+            // 重载弹窗
+            $('#reload').on('click',function() {
+
+                table.reload()
+                
+                console.log(table.checkItemList)
+                
+            })
+            
+        });
+    })
+</script>
+
+</body>
+</html>

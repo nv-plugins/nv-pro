@@ -1,0 +1,178 @@
+{% include 'src/tmpl/include/header.nv' %}
+<!--style开发模式-->
+<div id="base">
+    <div class="auto-size">
+        <div class="nv-layout nv-layout-has-side nv-layout-side-trigger nv-layout-theme-dark">
+            <div class="nv-layout-side">
+                {% include 'src/tmpl/include/layout-left.nv' %}
+            </div>
+            <div class="nv-layout">
+                <div class="nv-layout-header">
+                    {% include 'src/tmpl/include/layout-header.nv' %}
+                </div>
+                <div class="nv-layout-content">
+                    <div class="nv-breadcrumb pro-breadcrumb">
+                        <em class="nv-breadcrumb-normal"><i class="nvicon-home-empty"></i></em>
+                        <i class="nvicon-arrow-right nv-breadcrumb-icon"></i>
+                        <em class="nv-breadcrumb-normal">
+                            <a href="" class="nv-breadcrumb-link">dashboard</a>
+                        </em>
+                        <i class="nvicon-arrow-right nv-breadcrumb-icon"></i>
+                        <em class="nv-breadcrumb-normal">
+                            <a href="" class="nv-breadcrumb-link">可视化方式</a>
+                        </em>
+                        <i class="nvicon-arrow-right nv-breadcrumb-icon"></i>
+                        <em class="nv-breadcrumb-normal">
+                            方式二
+                        </em>
+                    </div>
+                    <div id="content" style="min-height: calc(100vh - 106px);padding:0 24px 24px;">
+                        <div class="pro-user-info">
+                            <div class="nv-row-flex">
+                                <div class="nv-col-lg-6 nv-col-sm-12 nv-col-xs-24 pro-card-10">
+                                    <div class="pro-total pro-blue">
+                                        <p>总量</p>
+                                        <b>10,111</b>
+                                        <p>发货总单量</p>
+                                    </div>
+                                    <div class="pro-fix">
+                                        <div class="pro-mark">
+                                            <i class="nvicon-heart-empty"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nv-col-lg-6 nv-col-sm-12 nv-col-xs-24 pro-card-10 ">
+                                    <div class="pro-total pro-green">
+                                        <p>待取件</p>
+                                        <b>1,210,123</b>
+                                        <p>下单、预约发货、接单中心接货</p>
+                                    </div>
+                                    <div class="pro-fix">
+                                        <div class="pro-mark">
+                                            <i class="nvicon-edit"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nv-col-lg-6 nv-col-sm-12 nv-col-xs-24 pro-card-10 ">
+                                    <div class="pro-total pro-lgreen">
+                                        <p>已签收</p>
+                                        <b>10,100</b>
+                                        <p>快递已被签收</p>
+                                    </div>
+                                    <div class="pro-fix">
+                                        <div class="pro-mark">
+                                            <i class="nvicon-mail-empty"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nv-col-lg-6 nv-col-sm-12 nv-col-xs-24 pro-card-10 ">
+                                    <div class="pro-total pro-orange">
+                                        <p>拒绝退货</p>
+                                        <b>10,100</b>
+                                        <p>快递已被拒绝、退货</p>
+                                    </div>
+                                    <div class="pro-fix">
+                                        <div class="pro-mark">
+                                            <i class="nvicon-star-empty"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-use-content">
+                            <div class="nv-row-flex pro-card-wrap">
+                                <div class="nv-col-lg-18 nv-col-sm-24 nv-col-xs-24 pro-cart-part">
+                                    <div class="nv-card pro-card-content">
+                                        <div class="pro-card-title">一级品类库存件数占比&nbsp;<i class="nvicon-help-empty"></i></div>
+                                        <div class="nv-card-content" id="bar" style="height:380px;">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nv-col-lg-6 nv-col-sm-24 nv-col-xs-24 pro-cart-part">
+                                    <div class="nv-card pro-card-content" style="height: 270px;margin-bottom: 10px;">
+                                        <div class="pro-card-title">公告</div>
+                                        <div class="nv-card-content pro-list">
+                                            <ul>
+                                                <li class="pro-list-li">
+                                                    <a href="#"><i class="nvicon-arrow-right"></i>&nbsp;供应商送货评价系统上线通知</a>
+                                                </li>
+                                                <li class="pro-list-li">
+                                                    <a href="#"><i class="nvicon-arrow-right"></i>&nbsp;对外合作单优化升级</a>
+                                                </li>
+                                                <li class="pro-list-li">
+                                                    <a href="#"><i class="nvicon-arrow-right"></i>&nbsp;北京辖区使用“国四”标准送货车辆的详细信息系统</a>
+                                                </li>
+                                                <li class="pro-list-li">
+                                                    <a href="#"><i class="nvicon-arrow-right"></i>&nbsp;对外合作单优化升级</a>
+                                                </li>
+                                                <li class="pro-list-li">
+                                                    <a href="#"><i class="nvicon-arrow-right"></i>&nbsp;北京辖区使用“国四”标准送货车辆限制进京须知</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="nv-card pro-card-content" style="height:170px">
+                                        <div class="pro-card-title">快捷入口/导航</div>
+                                        <div class="nv-card-content pro-short-cut" >
+                                            <div class="nv-row-flex">
+                                                <div class="nv-col-8 pro-short-item">
+                                                    <span>预约管理</span>
+                                                    <i class="nvicon-close-circle"></i>
+                                                </div>
+                                                <div class="nv-col-8 pro-short-item">
+                                                    <span>预约管理</span>
+                                                    <i class="nvicon-close-circle"></i>
+                                                </div>
+                                                <div class="nv-col-8 pro-short-item">
+                                                    <span>预约管理</span>
+                                                    <i class="nvicon-close-circle"></i>
+                                                </div>
+                                                <div class="nv-col-8 pro-short-item">
+                                                    <span>预约管理</span>
+                                                    <i class="nvicon-close-circle"></i>
+                                                </div>
+                                                <div class="nv-col-8 pro-short-item">
+                                                    <span>预约管理</span>
+                                                    <i class="nvicon-close-circle"></i>
+                                                </div>
+                                                <div class="nv-col-8">
+                                                    <span class="pro-short-btn-add"><i class="nvicon-add"></i>&nbsp;添加</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nv-row-flex pro-card-wrap">
+                                <div class="nv-col-24">
+                                    <div class="nv-card pro-card-content">
+                                        <div class="pro-card-title">商品类型/商品件型的商品数量占比</div>
+                                        <div class="nv-card-content" id="line" style="min-height:370px;">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" language="javascript" src="//storage.360buyimg.com/v2.0.0/nv.min.js"></script>
+<script type="text/javascript">
+    //配置方法
+    Nv.config({
+        //配置plugin_modules的目录；
+        baseUrl:"/dist/",
+        //开发模式，默认关闭；
+        development:true
+    })
+    //初始入口，Nv各个模块准备就绪后调用；
+    Nv.ready(function(){
+        Nv.use("./js/pro","./js/dashboard/two");
+    })
+</script>
+{% include 'src/tmpl/include/footer.nv' %}

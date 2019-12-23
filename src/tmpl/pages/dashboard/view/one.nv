@@ -1,0 +1,191 @@
+{% include 'src/tmpl/include/header.nv' %}
+<!--style开发模式-->
+<div id="base">
+    <div class="auto-size">
+        <div class="nv-layout nv-layout-has-side nv-layout-side-trigger nv-layout-theme-dark">
+            <div class="nv-layout-side">
+                {% include 'src/tmpl/include/layout-left.nv' %}
+            </div>
+            <div class="nv-layout">
+                <div class="nv-layout-header">
+                    {% include 'src/tmpl/include/layout-header.nv' %}
+                </div>
+                <div class="nv-layout-content">
+                    <div class="nv-breadcrumb pro-breadcrumb">
+                        <em class="nv-breadcrumb-normal"><i class="nvicon-home-empty"></i></em>
+                        <i class="nvicon-arrow-right nv-breadcrumb-icon"></i>
+                        <em class="nv-breadcrumb-normal">
+                            <a href="" class="nv-breadcrumb-link">dashboard</a>
+                        </em>
+                        <i class="nvicon-arrow-right nv-breadcrumb-icon"></i>
+                        <em class="nv-breadcrumb-normal">
+                            <a href="" class="nv-breadcrumb-link">可视化方式</a>
+                        </em>
+                        <i class="nvicon-arrow-right nv-breadcrumb-icon"></i>
+                        <em class="nv-breadcrumb-normal">
+                            方式一
+                        </em>
+                    </div>
+                    <div id="content" style="min-height: 400px;padding:0 24px 24px;">
+                        <style type="text/css">
+                            .ht{
+                                width:100%;
+                                height:20px;
+                            }
+                        </style>
+                        <div class="nv-row-flex nv-row-flex-between">
+                            <div class="pro-pdl5 nv-col-lg-6 nv-col-sm-12 nv-col-xs-24">
+                                <div class="nv-card base-h185">
+                                    <div class="nv-card-title">
+                                        <b>总量</b>
+                                        <i class="nvicon-info-empty nv-card-operate"></i>
+                                    </div>
+                                    <div class="nv-divide base-po base-lh25">
+                                        <h4>8,790</h4>
+                                        <p class="base-grey">周同比：12%&nbsp;<i></i></p>
+                                        <p class="base-grey">日环比：11%&nbsp;<i></i></p>
+                                        <hr class="nv-divide-dashed pro-divide-dashed">
+                                        <p class="pro-oh">发货总单量</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pro-pdl5 nv-col-lg-6 nv-col-sm-12 nv-col-xs-24">
+                                <div class="nv-card base-h185">
+                                    <div class="nv-card-title">
+                                        <b>待取件</b>
+                                        <i class="nvicon-info-empty nv-card-operate"></i>
+                                    </div>
+                                    <div class="nv-divide base-po base-lh25">
+                                        <h4>890</h4>
+                                        <p class="base-grey">周同比：11%&nbsp;<i></i></p>
+                                        <p class="base-grey">日环比：21%&nbsp;<i></i></p>
+                                        <hr class="nv-divide-dashed pro-divide-dashed">
+                                        <p class="pro-oh">下单、预约发货、接单中心接货</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pro-pdl5 nv-col-lg-6 nv-col-sm-12 nv-col-xs-24">
+                                <div class="nv-card base-h185">
+                                    <div class="nv-card-title">
+                                        <b>运输中</b>
+                                        <i class="nvicon-info-empty nv-card-operate"></i>
+                                    </div>
+                                    <div class="nv-divide base-po base-lh25">
+                                        <h4>199,909</h4>
+                                        <p class="base-grey">周同比：31%&nbsp;<i></i></p>
+                                        <p class="base-grey">日环比：21%&nbsp;<i></i></p>
+                                        <hr class="nv-divide-dashed pro-divide-dashed">
+                                        <p class="pro-oh">快件正在运输中</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pro-pdl5 nv-col-lg-6 nv-col-sm-12 nv-col-xs-24">
+                                <div class="nv-card base-h185">
+                                    <div class="nv-card-title">
+                                        <b>已签收</b>
+                                        <i class="nvicon-info-empty nv-card-operate"></i>
+                                    </div>
+                                    <div class="nv-divide base-po base-lh25">
+                                        <h4>3,219,009</h4>
+                                        <p class="base-grey">周同比：61%&nbsp;<i></i></p>
+                                        <p class="base-grey">日环比：71%&nbsp;<i></i></p>
+                                        <hr class="nv-divide-dashed pro-divide-dashed">
+                                        <p class="pro-oh">快递已被签收</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nv-row-flex nv-row-flex-between">
+                            <div class="pro-pdl5 nv-col-lg-16 nv-col-sm-18 nv-col-xs-24">
+                                <div class="nv-card">
+                                    <div class="nv-card-title">
+                                        <b>拒收退货</b>
+                                        <div class="nv-dropdown nv-dropdown-right">
+                                            <i class="nvicon-menu-empty nv-card-operate"></i>
+                                            <ul class="nv-dropdown-menu">
+                                                <li class="nv-dropdown-item">
+                                                    <a target="_blank" href="#">本周</a>
+                                                </li>
+                                                <li class="nv-dropdown-item">
+                                                    <a target="_blank" href="#">本月</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="nv-card-content">
+                                        <div id="refuse" style="height:180px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pro-pdl5 nv-col-lg-8 nv-col-sm-5 nv-col-xs-24">
+                                <div class="nv-card">
+                                    <div class="nv-card-title">
+                                        <b>终止</b>
+                                        <div class="nv-dropdown nv-dropdown-right">
+                                            <i class="nvicon-menu-empty nv-card-operate"></i>
+                                            <ul class="nv-dropdown-menu">
+                                                <li class="nv-dropdown-item">
+                                                    <a target="_blank" href="#">近2周</a>
+                                                </li>
+                                                <li class="nv-dropdown-item">
+                                                    <a target="_blank" href="#">本月</a>
+                                                </li>
+                                                <li class="nv-dropdown-item">
+                                                    本年
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="nv-card-content">
+                                        <div id="pie" style="height:180px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nv-row-flex">
+                            <div class="pro-pdl5 nv-col-24">
+                                <div class="nv-card">
+                                    <div class="nv-card-title">
+                                        <b>异常</b>
+                                        <div class="nv-dropdown">
+                                            <i class="nvicon-menu-empty nv-card-operate"></i>
+                                            <ul class="nv-dropdown-menu">
+                                                <li class="nv-dropdown-item">
+                                                    <a target="_blank" href="#">近一周</a>
+                                                </li>
+                                                <li class="nv-dropdown-item">
+                                                    <a target="_blank" href="#">本月</a>
+                                                </li>
+                                                <li class="nv-dropdown-item">
+                                                    近3个月
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="nv-card-content">
+                                        <div style="height: 420px;" id="error"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" language="javascript" src="//storage.360buyimg.com/v2.0.0/nv.min.js"></script>
+<script type="text/javascript">
+    //配置方法
+    Nv.config({
+        //配置plugin_modules的目录；
+        baseUrl:"/dist/",
+        //开发模式，默认关闭；
+        development:true
+    })
+    //初始入口，Nv各个模块准备就绪后调用；
+    Nv.ready(function(){
+        Nv.use("./js/pro","./js/dashboard/one");
+    })
+</script>
+{% include 'src/tmpl/include/footer.nv' %}
